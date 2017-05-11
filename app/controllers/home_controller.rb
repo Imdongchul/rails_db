@@ -12,8 +12,10 @@ class HomeController < ApplicationController
   	q.content = params[:db_content]
   	q.save
     @text =q.name
+    @text2 = q.content
   	maple=Artii::Base.new
   	@output = maple.asciify(@text)
+  	@output1 = maple.asciify(@text2)
   end
 
 end
