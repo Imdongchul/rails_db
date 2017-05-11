@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   def new
   end
 
-  def craete
+  def create
   	q = Question.new
   	q.name = params[:db_name]
   	q.content = params[:db_content]
